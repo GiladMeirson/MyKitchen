@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>My Kitchen</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="DataJson.js"></script>
+    <link href="index.css" rel="stylesheet" />
+    <script src="index.js"></script>
+
+</head>
+
+<body>
+
+
+    <div id="cont" class="container-fluid">
+
+
+        <div class="row">
+            <div id="IngredientBTN" class="circle col-6">
+                <img id="Ing" onclick="OnClickPlate(this)" class="Plateimg" src="img/plate.png" />
+                <p class="titlePlate">Add Ingredient</p>
+            </div>
+            <div id="DishRecipeBTN" class="circle col-6">
+                <img id="Dis" onclick="OnClickPlate(this)" class="Plateimg" src="img/plate.png" />
+                <p class="titlePlate">Add DishRecipe</p>
+            </div>
+        </div>
+        <div id="DishRecipeCardsPH" class="row">
+            <div class="col-12 DishRecipeCards col-md-4 col-lg-3">
+                <img class="img-fluid" src="https://www.foodandwine.com/thmb/89ZZD9UjFK0gl916arfCVwjJamc=/2000x1334/filters:fill(auto,1)/cream-tomato-rigatoni-FT-RECIPE1020-139fb3fa52574e8bb06f98e7fa3e4f1e.jpg" alt="Alternate Text" />
+                <p>Dish Name: Pasta With sauce</p>
+                <p>Total cooking time : 45 min</p>
+                <p>Ingredients: Pasta, Rice</p>
+                <p>Total Cal : 345</p>
+                <button onclick="ClickShowIngredient(this.id)" id="Pasta, Rice">Show Ingredient</button>
+            </div>
+
+        </div>
+        <!--<div id="IngredientCardsPH" class="row">
+            <div id="" class="IngredientCards col-12 col-md-4 col-lg-3">
+                <p class="nameIngredient">Pasta</p>
+                <img class="img-fluid imgIngredient" src="https://www.foodpackaging.guru/pastapackaging/wp-content/uploads/sites/14/2016/01/PFM_pasta-standard-dried.jpg" alt="Alternate Text" />
+                <p class="CalIngredient">Calories per 100g: 34</p>
+                <input type="checkbox" name="Ingredient" />
+                <label for="Ingredient" class="addLable">Add</label><br />
+
+
+
+            </div>
+        </div>-->
+
+    </div>
+
+    <div id="IngredientINPUT">
+        <label for="Ingname">Ingredient Name:</label>
+        <br />
+        <input id="IngredientName" type="text" name="Ingname" value="" />
+        <br />
+        <label for="Ingimg">Ingredient Img (url):</label>
+        <br />
+        <input id="IngredientImg" type="text" name="Ingimg" value="" />
+        <br />
+        <label for="Ingcal">Ingredient Cal:</label>
+        <br />
+        <input id="IngredientCal" type="number" name="Ingcal" value="" />
+        <br />
+
+        <button onclick="CreateIngredient()">Create</button><button onclick="CloseIngredientModal()">Close</button>
+
+    </div>
+
+
+    <div id="DishRecipeINPUT">
+        <label for="disname">DishRecipe Name:</label>
+        <br />
+        <input id="DishRecipeName" type="text" name="disname" value="" />
+        <br />
+        <label for="distime">Cooking Time (min):</label>
+        <br />
+        <input id="DishRecipeTime" type="number" name="distime" value="" />
+        <br />
+        <label for="disimg">Ingredient Img (url):</label>
+        <br />
+        <input id="DishRecipeImg" type="text" name="disimg" value="" />
+        <br /><br />
+        <h1>Choose Ingredients: </h1><hr />
+        <div id="IngredientCardsPH">
+
+        </div>
+    </div>
+
+
+    <div onclick="ResetToMain()" id="ModalIngredient">
+        <p id="XBTN">X</p>
+        <div class="row">
+            <div class="col-12">
+                <h1>Ingredient:</h1><br /><br /><hr />
+            </div>
+            
+        </div>
+        <div  id="IngredientDetail" class="row">
+            <!--<div class="col-4">
+                <p>GGGGG</p>
+            </div>
+
+            <div class="col-4">
+                <p>GGGGGGG</p>
+            </div>
+            <div class="col-4">
+                <p>GGGGGG</p>
+            </div>
+            <div class="col-4">
+                <p>GGGGGGGGG</p>
+            </div>
+            <div class="col-4">
+                <p>GGGGGG</p>
+            </div>-->
+        </div>
+
+    </div>
+
+    <div id="Sounds">
+        <audio id="CrispySound" controls="controls">
+            <source src="sounds/CrispySound.mp3" type="audio/mpeg" />
+        </audio>
+        <audio id="steakSound" controls="controls">
+            <source src="sounds/steakSound.mp3" type="audio/mpeg" />
+        </audio>
+    </div>
+
+</body>
+</html>

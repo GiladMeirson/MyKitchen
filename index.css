@@ -1,0 +1,189 @@
+﻿*{
+    font-family:Assistant;
+    text-align:center;
+}
+
+body {
+    background-image: url('img/kitchenwallpaper.jpeg');
+    background-image: url('img/background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-size: 100% 100%;
+}
+
+.titlePlate{
+   margin-top:-40%;
+    font-size:35px;
+    font-weight:600;
+
+}
+
+.circle:hover {
+    cursor:pointer;
+}
+
+.IngredientCards {
+    border-radius: 10%;
+    border: 1px black solid;
+    background-image: linear-gradient(to bottom,#e2c828cc, #dac856d6,#ef5b5b);
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    max-width: 20%;
+    font-size: 22px;
+    margin:2%;
+}
+.IngredientCardsPH {
+ 
+}
+
+.IngredientCards img {
+    max-width: 65%;
+}
+
+    .IngredientCards input {
+        width: 12%;
+        height: 8%;
+    }
+#ModalIngredient {
+    display:none;
+    position: absolute;
+    background-image: linear-gradient(to bottom,#ffee83, #ede193,#f59292);
+    border-radius: 10%;
+    border: 1px black solid;
+    font-size: 30px;
+}
+#IngredientDetail {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#Sounds, #Sounds audio {
+    display: none;
+}
+
+
+#XBTN {
+    position: absolute;
+    top: 12px;
+    width: 56px;
+    height: 66px;
+    right: 10px;
+    background-image: linear-gradient(to bottom,#ff0000, #d54b4b,#d79393);
+    padding: 2%;
+    border-radius: 50%;
+    font-size: 30px;
+    border: 1px black solid;
+}
+
+.DishRecipeCards {
+    margin-top: 10%;
+    font-size: 30px;
+    border-radius: 10%;
+    border: 1px black solid;
+    background-image: linear-gradient(to bottom,#e2c828cc, #dac856d6,#ef5b5b);
+    padding: 3%;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+    .DishRecipeCards img {
+        border-radius:10%;
+    }
+    .DishRecipeCards button {
+        border-radius: 20%;
+        background-image: linear-gradient(to bottom,#eff763, #f9d84f,#c29d37);
+        padding: 3%;
+        box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    }
+
+    #DishRecipeCardsPH {
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 5%;
+    }
+
+#IngredientINPUT {
+    position: absolute;
+    display:none;
+    border:2px black solid;
+    padding:2%;
+    font-size:34px;
+    border-radius: 10%;
+    background-image: linear-gradient(to bottom,#e2c828cc, #dac856d6,#ef5b5b);
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+    #IngredientINPUT button, #DishRecipeINPUT button {
+        margin-top: 5%;
+        border-radius: 25%;
+        margin-right: 2px;
+        background-image: linear-gradient(to bottom,#caed3f, #afe35f,rgba(61, 142, 39, 0.90));
+        box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    }
+#dishCreateBtn {
+    position: relative;
+    bottom: 0px;
+    left: 35%;
+    font-size: 45px;
+    background-image: linear-gradient(to bottom,#caed3f, #afe35f,rgba(61, 142, 39, 0.90));
+}
+#DishRecipeINPUT #dishCloseBtn {
+    background-image: linear-gradient(to bottom,#a60000, #ff8c8c,#f30c13);
+    position: relative;
+    bottom: 0px;
+    left: 40%;
+    font-size: 45px;
+}
+
+#DishRecipeINPUT {
+    margin:2%;
+    position: absolute;
+    display: none;
+    border: 2px black solid;
+    padding: 2%;
+    font-size:32px;
+    border-radius: 10%;
+    background-image: linear-gradient(to bottom,#e2c828cc, #dac856d6,#ef5b5b);
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+    /*------------------------
+-----------------------*/
+    /*the Rotate function*/
+    .Plateimg:before {
+        z-index: 1;
+    }
+
+.Plateimg:after {
+    z-index: 2;
+}
+
+.Plateimg:hover {
+    -webkit-animation: 0.5s rotate-right linear 2s;
+    animation: 0.5s rotate-right cubic-bezier(0.13, 0.83, 0.35, 0.91);
+}
+
+
+
+@-webkit-keyframes rotate-right {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate-right {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
